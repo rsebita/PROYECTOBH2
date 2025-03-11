@@ -2,7 +2,7 @@ import React from 'react';
 import '../index.css';
 
 
-const Jugador = ({ nombre, imagen, descripcion ,numeroCamiseta}) => {
+const Jugador = ({ nombre, imagen, descripcion}) => {
   return (
     <div className="jugador-card">
       <img src={imagen} alt={nombre} className="jugador-imagen" />

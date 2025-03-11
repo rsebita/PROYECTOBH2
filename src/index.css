@@ -174,38 +174,6 @@ body {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Media queries para pantallas pequeñas */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-  }
-
-  .title {
-    font-size: 30px;
-    padding: 50px 5%;
-  }
-
-  .img-home {
-    width: 100%;
-    padding: 20px;
-  }
-
-  .slider-container {
-    width: 90%;
-  }
-
-  .tarjet {
-    flex-direction: column;
-  }
-
-  .jugador-card {
-    width: 90%;
-  }
-
-  .history {
-    padding: 20px;
-  }
-}
 
 /* ... existing styles ... */
 
@@ -400,4 +368,57 @@ body {
   margin-left: 5px;
   font-size: 1.2em;
   display: inline-block; /* Asegura que el ícono se muestre en línea con el número */
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 5%;
+  }
+
+  .navbar a {
+    font-size: 14px; /* Reducir el tamaño de la fuente en móviles */
+    margin: 0 5px; /* Reducir el espaciado entre enlaces */
+  }
+
+  .header {
+    padding: 20px 5%;
+  }
+  
+  .title {
+    font-size: 24px;
+    padding: 30px 5%;
+  }
+
+  .img-home {
+    width: 200%;
+    padding: 10px;
+  }
+
+  .slider-container {
+    width: 90%;
+  }
+
+  .tarjet {
+    flex-direction: column;
+  }
+
+  .history {
+    padding: 20px;
+  }
+
+  .jugador-card {
+    width: calc(50% - 20px); /* Mostrar 2 tarjetas por fila en móviles */
+    max-width: none; /* Eliminar el máximo ancho */
+  }
+
+  .equipo-container {
+    gap: 10px; /* Reducir el espacio entre tarjetas */
+  }
+}
+
+@media (max-width: 480px) {
+  .jugador-card {
+    width: calc(100% - 20px); /* Mostrar 1 tarjeta por fila en móviles muy pequeños */
+  }
 }

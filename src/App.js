@@ -200,14 +200,13 @@ function App() {
               nombre={jugador.nombre}
               imagen={jugador.imagen}
               descripcion={jugador.descripcion}
-              numeroCamiseta={jugador.numeroCamiseta}
-            />
+              numeroCamiseta={jugador.numeroCamiseta}/>
           ))}
       </div>
       <div className="frame-container">
         <div className="layout-container">
           <div className="left-section">
-            <History />
+            <History/>
           </div>
             <div className="right-section">
               <div className="top-right">
