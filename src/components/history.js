@@ -3,7 +3,7 @@ import '../index.css'; // Importa el archivo CSS
 
 const History = () => {
   return (
-    <div className="history">
+    <div id="historia" className="history">
       <h2>Nuestra Historia</h2>
       <p>
         Todo comenzó en el colegio, donde un grupo de amigos compartía una pasión en común: el fútbol. 

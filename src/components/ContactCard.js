@@ -3,7 +3,7 @@ import { FaEnvelope, FaPhone, FaUser } from 'react-icons/fa';
 
 const ContactCard = () => {
   return (
-    <div className="contact-card">
+    <div id="#contacto" className="contact-card">
       <div style={{
         display: 'flex',
         flexDirection: 'column',

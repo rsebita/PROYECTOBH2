@@ -1,7 +1,6 @@
 import React from 'react';
 import '../index.css';
 
-
 const Jugador = ({ nombre, imagen, descripcion}) => {
   return (
     <div className="jugador-card">
@@ -11,5 +10,6 @@ const Jugador = ({ nombre, imagen, descripcion}) => {
     </div>
   );
 };
+
 
 export default Jugador;

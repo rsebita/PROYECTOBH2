@@ -272,6 +272,27 @@ body {
   background-color: #f9f9f9;
 }
 
+.bhfc {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  -webkit-text-stroke: 2px #1abc9c; /* Borde alrededor del texto */
+  margin-top: 20px; /* Espacio arriba */
+  margin-bottom: 20px; /* Espacio abajo */
+  padding: 10px; /* Espacio interno */
+}
+
+.amistad {
+  color: #1abc9c;
+  font-size: 32px;
+  font-weight: bold;
+  text-shadow: 0 0 5px #1abc9c, 0 0 10px #1abc9c, 0 0 20px #1abc9c; /* Efecto neón */
+  margin-top: 20px; /* Espacio arriba */
+  margin-bottom: 20px; /* Espacio abajo */
+  padding: 10px; /* Espacio interno */
+}
+
 /* CalendarioSlider.css */
 .calendario-slider {
   width: 100%;
@@ -370,6 +391,35 @@ body {
   display: inline-block; /* Asegura que el ícono se muestre en línea con el número */
 }
 
+.footer {
+  background: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+  backdrop-filter: blur(10px); /* Efecto de desenfoque */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.2); /* Borde translúcido */
+}
+
+.social-icons a {
+  color: #333; /* Color oscuro */
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #1abc9c; /* Color al pasar el mouse */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* Media queries para pantallas pequeñas */
 @media (max-width: 768px) {
   .navbar {
@@ -385,6 +435,13 @@ body {
     padding: 20px 5%;
   }
   
+  .history {
+    width: 100%;
+    padding: 15px;
+    font-size: 14px;
+
+  }	
+
   .title {
     font-size: 24px;
     padding: 30px 5%;
@@ -408,17 +465,16 @@ body {
   }
 
   .jugador-card {
-    width: calc(50% - 20px); /* Mostrar 2 tarjetas por fila en móviles */
-    max-width: none; /* Eliminar el máximo ancho */
+    width: calc(40% - 50vhpx); /* Mostrar 1 tarjeta por fila en móviles muy pequeños */
   }
 
   .equipo-container {
     gap: 10px; /* Reducir el espacio entre tarjetas */
   }
-}
 
-@media (max-width: 480px) {
-  .jugador-card {
-    width: calc(100% - 20px); /* Mostrar 1 tarjeta por fila en móviles muy pequeños */
+  .footer {
+    font-size: 12px;
+    padding: 15px 0;
   }
+  
 }
